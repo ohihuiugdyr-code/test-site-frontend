@@ -1,141 +1,165 @@
-<!--developer ArtemAlchin-->
-<!--дата начала 09.07.2026-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт</title>
+    <title>Document</title>
 
-    <!--google fonts start-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Oswald:wght@200..700&family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <!--google end-->
+    <style>
+        body { 
+            margin: 0;
+            padding: 0;
+    background:#1d1d1d;
+    font-family:Arial, Helvetica, sans-serif;
+        }
 
-    <link rel="stylesheet" href="styles/main.css">
 
-</head>
 
-<body>
-    <!-- header и навигация-->
-    <header class="header">
-        <section class="header__main_Bd">
-            <div class="logo">TESTSITE</div>
-            <nav class="header__nav">
-                <a href="#">Home</a>
-                <a href="#">Product</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </nav>
-            <button class="secondary">Login</button>
-        </section>
+    .container__main { 
+   
+    }
 
-        <!-- секция главных текстов-->
-        <section class="header_text">
-            <h1 class="header-text-h">
-                Website development since 0
-            </h1>
-            <h5 class="header-text-sub-h">
-            Главная задача — заполнить пространство в макете. 
-            Чтобы продемонстрировать визуальную структуру, 
-            типографику и расположение элементов, не отвлекая 
-            на осмысленное содержание <!--(Текст заглушка)-->
-            </h5>
-        </section>
 
-        <!-- секция кнопок-->
-        <section class="header__buttons">
-            <button class="primary__top header__try_ots">Try for Free</button>
-            <button class="secondary">Login</button>
-        </section>
+  .header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    height:70px;
+    padding:0 30px;
+    box-sizing:border-box;
+    background:#2b2b2b;
+    box-shadow:0 4px 15px rgba(0,0,0,.4);
+}
 
-        <!-- секция изображения-->
-            <section class="header__image">
-                <img src="images/screens.png" alt="">
-            </section>
-        <section class="header__featurs">
-        <h1 class="header__features-text">FEATURES</h1>
-            <h4 class="header__features-text-sub">
-                    Most calendars are designed for teams. Slate is designed for<br>
-                    freelancers who want <br>
-                    a simple way to plan their schedule.
-                </h4>
 
-    <div class="images-header__features">
-        <img class="header_features-images-1" src="images/ChatBot.png" alt="ChatBot">
-            <img class="header_features-images-2" src="images/line-chat.png" alt="Line Chat">        
-                <div class="content__rows">
-                    <div class="content__text-1">
-                        <div class="content__text__svg">
-                            <img class="vektor-kuh" src="images/Vector.svg" alt="">
-                        <h5>Chat Interface
-                                Stay connected with
-                                your team using a 
-                                simple and intuitive chat interface. <br>
-                                Send messages, share files, and collaborate 
-                                in real time.</h5>
-                            </div>
-                        </div>
-                <div class="content__text-2">
-                    <div class="content__text__svg">
-                        <img class="vektor-kuh" src="images/Vector.svg" alt="">
-                            <h5>Chat Interface
-                                    Stay connected with 
-                                    your team using a 
-                                    simple and intuitive chat interface. <br>
-                                    Send messages, share files, and collaborate 
-                                    in real time.</h5>
-                                </div>
-                            </div>
-                <div class="content__text-3">
-                    <div class="content__text__svg">
-                         <img class="vektor-kuh" src="images/Vector.svg" alt="">
-                            <h5>Chat Interface 
-                            Stay connected with <br>
-                            your team using a 
-                            simple and intuitive chat interface. 
-                            Send messages, share files, and collaborate 
-                            in real time.</h5>
-                        </div>          
-                    </div>
-                </div>
-            </div>
-        </section>
+  .nav__header{
+    display:flex;
+    gap:25px;
+    padding:10px 20px;
+    border:1px solid #555;
+    border-radius:30px;
+    background:#363636;
+}
 
-        <section class="content__main_down">
+    .nav__header a{
+        color:#f0f0f0;
+        text-decoration:none;
+        font-size:15px;
+        transition:.3s;
+    }
 
-            <div class="img__content_main">
-                <h1 class="img_content__text">MANAGE PROJECT SMARTER AMD FASTER</h1>
-                <h5 class="img_content__text-sub">All the tools your team needs in one place. Plan tasks, collaborate, track progress, and achieve your goals without unnecessary complexity.</h5>
-                <div class="img__content_img-block">
-                <img class="img__content_book" src="images/c8865074-ad12-4bd9-ac3a-4ad216c5ac8f.png" alt="">
-                <button class="secondary_img">
-                Login</button>
-            </div>
-            </div>
+    .nav__header a:hover{
+        color:#3da9fc;
+    }
+            
 
+
+    .logo__header{
+        width:45px;
+        height:45px;
+        border-radius:50%;
+
+    }
+
+    .header button{
+        width:95px;
+        height:40px;
+        border:none;
+        border-radius:30px;
+        background:#3da9fc;
+        color:white;
+        font-size:15px;
+        cursor:pointer;
+        transition:.3s;
+    }
+
+    .header button:hover{
+        background:#1d8ceb;
+        transform:scale(1.05);
+    }
+
+              .header button:hover { 
+            color: rgb(222, 222, 222);
+            background-color: rgb(68, 68, 68);
+
+            
+        }
+
+            .main  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img_main {
+        width: 700px;
+        height: 400px;
+    }
+
+@media (max-width:  768px) {
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 11px;
+    }
     
-        </section>
+    .logo__header {
+        width: 42px;
+        height: 42px;
+        
+    }
+
+        .header button:hover{
+        background:#1d8ceb;
+        transform:scale(1.05);
+    }
+    .nav__header {
+        width: 200px;
+        height: 20px;
+
+    }
+    .header button {
+            display: flex;
+    justify-content: center;
+    align-items: center;
+        width: 90px;
+        height: 42px;
+        font-size: 20px;
+    }
+    .main  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img_main {
+        width: 300px;
+        height: 200px;
+    }
+}
 
 
-            <section class="footer_block">
-                <footer class="footer">
+    </style>
+</head>
+<body>
+    <main class="container__main">
+    
+        <div class="header">
+            <img class="logo__header" src="../images/logo.png" alt="лого">
+            <div class="nav__header">
+            <a href="">Главная</a>
+            <a href="">Новости</a>
+            <a href="">About</a>
+            </div>
+            <button>войти</button>
+        </div>
 
-                    <div class="svg_footer_logo">
-                        <img src="images/footer.svg" alt="">
-                        <h4 class="h4__footer">Work smarter.</h4>
-                    </div>
+        <div class="main">
+            <img class="img_main" src="..//images/line-chat.png" alt="">
+        </div>
 
-                    <h5>
-                        Move faster. Achieve more.
-                        The all-in-one workspace for modern teams.
-                    </h5>
-                </footer>
-            </section>
-
-    </header>
-
+    </main>
 </body>
 </html>
